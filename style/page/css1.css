@@ -1,0 +1,153 @@
+.header{
+    width: 1100px;
+    margin: 120px auto 0;
+}
+.header_left{
+    width: 347px;
+    float: left;
+    margin-right: 102px;
+}
+.header_left ul{
+    width: 346px;
+    height: 835px;
+    border: 1px solid #484848;
+    box-shadow: 1px 1px 1px 1px #ddd;
+}
+.header_left ul li{
+    text-align: center;
+    width: 100%;
+    height: 64px;
+    line-height: 66px;
+    font-size: 28px;
+    color: #e60012;
+}
+.header_left ul li.on{
+    width: 100%;
+    height: 64px;
+    background-color: #e60012;
+    color: #ffffff;
+    position: relative;
+}
+.header_left ul li.on:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 33px solid transparent;
+    display: inline-block;
+    border-left-color: #e60012;
+    position: absolute;
+    right: -66px;
+    bottom: -1px;
+}
+
+
+
+
+.header_right{
+    width: 651px;
+    float: left;
+    position: relative;
+}
+.header_right h2{
+    font-size: 18px;
+    color: #262626;
+}
+.header_right span{
+    color: #b3b3b3;
+    font-size: 16px;
+    border-bottom: 1px solid #b3b3b3;
+    width: 100%;
+}
+.header_right img:after{
+    content: '';
+    display: block;
+    background: url(../../images/commons/04.png) no-repeat center center;
+}
+.header_right .img1{
+    position: absolute;
+    left: -74px;
+    top: 132px;
+}
+.header_box ul li{
+    width: 600px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.header_box ul li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 1px solid #ddd;
+    padding-left: 22px;
+}
+.header_box ul li a:after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../../images/commons/06.png) no-repeat center center;
+    position: absolute;
+    right: 25px;
+    bottom: 11px;
+}
+.header_box ul li.on a:after{
+    content: '';
+    width: 24px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    background-color: #e60012;
+}
+.header_box ul li div{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 22px;
+    line-height: 38px;
+    display: none;
+}
+
+
+.header_box ul li div p{
+    text-indent: 2em;
+    color: #999999;
+}
+.header_box ul li.on div{
+    display: block;
+}
+.header_right .bd{
+    display: none;
+    padding: 10px;
+}
+.header_right .on{
+    display: block;
+}
+
+.guarantee{
+    font-size: 18px;
+    color: #999999;
+    line-height: 32px;
+}
+.guarantee p{
+    text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

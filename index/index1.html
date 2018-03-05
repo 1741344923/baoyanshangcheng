@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../style/commons/common.css">
+        <link rel="stylesheet" href="../style/page/css1.css">
+        <script src="../js/commons/jquery-1.7.2.min.js"></script>
+        <script>
+            $(function () {
+                $(".header_left ul li").on("click",function () {
+
+                    var s = $(this).index();
+
+                    $(this)
+                        .addClass("on")
+                        .siblings()
+                        .removeClass("on");
+
+                    $(".header_right .bd")
+                        .eq(s)
+                        .addClass("on")
+                        .siblings()
+                        .removeClass("on");
+                });
+
+
+                $(".header_box ul li").on("click",function () {
+                    if($(this).hasClass("on")){ // 如果有on   表示我现在是减号，点击的时候，我应该变成加号
+                        $(this).removeClass('on');
+                    }else{ // 如果没有on   表示我现在是加号，点击的时候，我应该变成减号
+                        $(this).addClass('on');
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header clearfix">
+            <div class="header_left">
+                <img src="../images/commons/01.png" alt="">
+                <ul>
+                    <li>关于我们</li>
+                    <li>品质保障</li>
+                    <li>知识产权</li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <img style="margin-bottom: 65px;" src="../images/commons/05.png" alt="">
+                <img src="../images/commons/03.png" alt="">
+                <img class="img1" src="../images/commons/04.png" alt="">
+                <div class="header_box bd on">
+                    <ul>
+                        <li>
+                            <a>我们是谁</a>
+                            <div>
+                                <h2>我们是谁：</h2>
+                                <p>很多时候我们的问题来自四面八方，我们总是面临的诱惑太多而所知甚少......</p>
+                                <p>当谈及我们最亲密的肌肤问题，很多人最终发现只是常年在美白、祛痘等等的误区里挣扎，而无法区分疾病及正常的洁肤护肤，做为专业人员，我们将通过这一平台为广大客户提供基于最自然防护的洁肤护肤产品。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a>信赖我们的理由</a>
+                            <div>
+                                <h2>我们是谁：</h2>
+                                <p>很多时候我们的问题来自四面八方，我们总是面临的诱惑太多而所知甚少......</p>
+                                <p>当谈及我们最亲密的肌肤问题，很多人最终发现只是常年在美白、祛痘等等的误区里挣扎，而无法区分疾病及正常的洁肤护肤，做为专业人员，我们将通过这一平台为广大客户提供基于最自然防护的洁肤护肤产品。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a>联系我们</a>
+                            <div>
+                                <h2>我们是谁：</h2>
+                                <p>很多时候我们的问题来自四面八方，我们总是面临的诱惑太多而所知甚少......</p>
+                                <p>当谈及我们最亲密的肌肤问题，很多人最终发现只是常年在美白、祛痘等等的误区里挣扎，而无法区分疾病及正常的洁肤护肤，做为专业人员，我们将通过这一平台为广大客户提供基于最自然防护的洁肤护肤产品。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guarantee bd" style="border: 1px solid #ddd;">
+                    <h2>品质保障</h2>
+                    <h3>供应商选择</h3>
+                    <p>我们所有的供应商必须是经过多年的考察和筛选，我们一贯秉持的原则 <em style="color: #262626;">(最专业的队伍，做最专业的事业)。</em></p>
+                    <p>文字与皮肤一样，不要过度的修饰。我们知道不是每一位客户都需要成为护肤专家，但不做过度和夸大的宣传仍是我们的责任，我们将清楚标示每一产品的成分，<em style="color: #262626;">最显示我们与众不同的品质是我们将列示我们的产品所不含的成分！</em>赢得我们信任和尊敬的是来自于默默地精工细作，而非品牌和名声。</p>
+                    <p>我们产品的信誉保障来自：</p>
+                    <img style="margin-top: 40px; margin-bottom: 42px;" src="../images/commons/07.png" alt="">
+                    <h4>供应商介绍</h4>
+                    <p>这家供应商我们考察了整整5年，舒适的产品体验使人难以忘怀，而连续的品质保证是我们选择它的真正原因。在欧盟有机品质保证的前提下，更是明确列示了产品所有不含的化学添加成分，这才是真正货真价实的天然有机产品。就凭这张负面清单，选择它不再需要其他理由。希望不久的将来，不光业内人士的知晓，广大的普通人群更是能感受到它所带来的特殊体验。</p>
+                    <p>菠丹妮</p>
+                    <p>自家种植的300多公顷有机花园，欧盟有机认证，它的品质无可挑剔，同时又将天然环保演绎到极致，连标签上的文字都是采用的植物油墨。</p>
+                    <p>随着2010年的世博会，它的名字开始深入很多中国家庭。</p>
+                    <p>看看谁来为它站台。</p>
+                </div>
+                <div class="header_box bd">
+                    <ul>
+                        <li>
+                            <a href="">产品知识</a>
+                            <div>
+                                <p style="color: #262626;">产品知识</p>
+                                <p>关于天然洗/护肤产品</p>
+                                <p>我们不提倡皮肤日常过度的修饰和不必要的护理，所谓大道至简，一般的肌肤只要在清洁时予以适当的养护即可。除非一些特殊的肌肤，在适当养护时采取一些针对的预防措施，如油性肌肤，敏感肌肤。这时，最天然的植物产品。</p>
+                                <p style="color: #262626;">传统手工皂</p>
+                                <p style="color: #262626;">产品知识问答</p>
+                                <p style="color: #262626;">购买流程</p>
+                                <p>1.注册/登陆：通过手机号/邮箱进行用户注册并登陆</p>
+                                <p>2.产品搜索：可按商品分类、供应商、或高级搜索工具直接搜索所需产品</p>
+                                <p>3.下单购买：将所需产品加入购物车，进行结算。</p>
+                                <p>4.订单提交：填写收货人信息、选择配送方式、支付方式、开票信息（如需要）后选择提交订单</p>
+
+                                <p>配送方式及运费</p>
+                                <p>验货后，若发现商品错发、商品少发、商品有表面质量等影响签收因素问题，可当场向送货员说明情况并拒签。</p>
+                                <p> 一般情况下，因产品本身的特殊性：均为欧洲原装进口，严格经过海关、商检的核查检验，非产品本身问题均不接受退货。恳请广大客户谅解。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
